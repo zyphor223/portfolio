@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moje Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 5px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    #about img {
+      float: right;
+      max-width: 150px;
+      margin-left: 20px;
+      border-radius: 50%;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      #about img {
+        float: none;
+        display: block;
+        margin: 20px auto;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jan Kowalski</h1>
+    <p>Web Developer | Freelancer</p>
+    <nav>
+      <ul>
+        <li><a href="#about">O mnie</a></li>
+        <li><a href="#projects">Projekty</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>O mnie</h2>
+    <img src="profil.jpg" alt="Moje zdjęcie">
+    <p>Cześć! Jestem Jan, web developer z pasją do tworzenia nowoczesnych i responsywnych stron internetowych. Mam doświadczenie w HTML, CSS, JavaScript oraz frameworkach takich jak React.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Moje projekty</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Portfolio</h3>
+        <p>Strona portfolio prezentująca moje umiejętności i projekty.</p>
+      </div>
+      <div class="project">
+        <h3>Sklep internetowy</h3>
+        <p>Prosty
